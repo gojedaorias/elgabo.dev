@@ -4,7 +4,6 @@ import React from "react";
 import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
-import { Instagram } from "@/components/Icons";
 
 export default function Hero() {
   return (
