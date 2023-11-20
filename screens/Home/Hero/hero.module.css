@@ -1,0 +1,131 @@
+.section {
+  padding: 80px;
+  position: relative;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.breakline {
+  width: 100%;
+  height: 1px;
+  background-color: var(--n6);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profession {
+  color: var(--n4);
+}
+
+.avatar_container {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--n7);
+}
+
+.avatar_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bottom_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  margin-top: 32px;
+}
+
+.circular_container {
+  position: relative;
+}
+
+.vector {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.text {
+  font-weight: 400;
+  letter-spacing: 1.7px;
+  font-size: 17px;
+  font-variant-ligatures: none;
+  letter-spacing: 6px;
+  transform-origin: 250px 250px;
+  fill: var(--n2);
+  /* animation-name: change-color;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+}
+
+.rotated_text {
+  width: 200px;
+  height: 200px;
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+  0% {
+    fill: var(--n2); /* Starting color */
+  }
+  50% {
+    fill: var(--green); /* Midway color */
+  }
+  100% {
+    fill: var(
+      --n2
+    ); /* Ending color, can be different or the same as the starting color */
+  }
+}
+
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 64px;
+  }
+
+  .rotated_text {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 430px) {
+  .section {
+    padding: 48px 32px;
+  }
+
+  .rotated_text {
+    width: 100px;
+    height: 100px;
+  }
+
+  .vector {
+    width: 18px;
+    height: 18px;
+  }
+}
