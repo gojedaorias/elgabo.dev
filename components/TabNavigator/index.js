@@ -121,38 +121,38 @@ export default function TabNavigator() {
   };
 
   return (
-    <motion.nav
-      className={cn(styles.container, {
-        [styles.container_open]: visible,
-      })}
-      variants={container}
-      initial="hidden"
-      animate="show"
-    >
-      <motion.button
+    <motion.nav className={cn(styles.container)}>
+      {/* <motion.button
         className={cn(styles.burger, {
           [styles.burger_active]: visible,
         })}
         onClick={() => setVisible(!visible)}
-      ></motion.button>
+      ></motion.button> */}
 
-      {links.map((link, index) => (
-        <Link href={link.url} key={index}>
-          <motion.button
-            variants={itemVariant}
-            ref={addToRefs}
-            data-url={link.url}
-            className={cn("btn-2", styles.nav_item, {
-              [styles.active]: pathname === link.url,
-            })}
-          >
-            {link.icon}
-            <span className={cn("btn-2", styles.nav_link_text)}>
-              {link.title}
-            </span>
-          </motion.button>
-        </Link>
-      ))}
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className={styles.nav_links}
+      >
+        {links.map((link, index) => (
+          <Link href={link.url} key={index}>
+            <motion.button
+              variants={itemVariant}
+              ref={addToRefs}
+              data-url={link.url}
+              className={cn("btn-2", styles.nav_item, {
+                [styles.active]: pathname === link.url,
+              })}
+            >
+              {link.icon}
+              <span className={cn("btn-2", styles.nav_link_text)}>
+                {link.title}
+              </span>
+            </motion.button>
+          </Link>
+        ))}
+      </motion.div>
 
       <motion.div
         className={styles.socials}

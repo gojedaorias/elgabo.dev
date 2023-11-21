@@ -6,7 +6,6 @@ export default function HomePage() {
   return (
     <main className={styles.main}>
       <Hero />
-      <Hero />
     </main>
   );
 }

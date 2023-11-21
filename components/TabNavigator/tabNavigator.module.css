@@ -4,27 +4,19 @@
 
 @media (max-width: 430px) {
   .container {
-    display: flex;
-    align-items: center;
     width: 100%;
     background-color: var(--background);
     position: fixed;
     bottom: 0;
     z-index: 99;
     overflow-x: auto;
-    gap: 8px;
     padding: 12px 32px 24px 32px;
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
-  .container_open {
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
-    padding-top: 64px;
-    padding-right: 0;
-    padding-left: 0;
+  .nav_links {
+    display: flex;
+    gap: 8px;
   }
 
   .nav_item {
@@ -36,50 +28,8 @@
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
-  .container_open .active {
-    width: 100%;
-    height: 72px;
-    background: none;
-  }
-
-  .container_open .nav_item {
-    padding-left: 32px;
-    border-left: 4px solid transparent;
-    border-radius: 0;
-  }
-
-  .container_open .active {
-    border-left: 4px solid var(--green);
-  }
-
-  .container_open .active svg {
-    stroke: var(--green);
-  }
-
-  .container_open .active span {
-    color: var(--green);
-  }
-
-  .container_open .nav_link_text {
-    display: block;
-  }
-
-  /* .sidebar_open .nav_item svg {
-    display: none;
-  } */
-
   .socials {
     display: none;
-  }
-
-  .container_open .socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    margin-top: auto;
-    margin-left: 32px;
-    margin-right: 32px;
   }
 
   .social svg {
@@ -107,10 +57,6 @@
   .active span {
     display: block;
     color: var(--n2);
-  }
-
-  .container_open .burger {
-    margin-left: 32px;
   }
 
   .burger {

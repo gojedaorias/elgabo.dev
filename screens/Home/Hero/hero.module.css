@@ -119,13 +119,16 @@
     padding: 48px 32px;
   }
 
-  .rotated_text {
-    width: 100px;
-    height: 100px;
+  .circular_container {
+    display: none;
   }
 
   .vector {
     width: 18px;
     height: 18px;
+  }
+
+  .button {
+    width: 100%;
   }
 }
