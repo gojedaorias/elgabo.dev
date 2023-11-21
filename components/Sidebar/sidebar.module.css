@@ -76,7 +76,7 @@
 }
 
 .sidebar_open .active {
-  background-color: var(--green);
+  background-color: var(--n8);
 }
 
 .sidebar_open .active svg {
