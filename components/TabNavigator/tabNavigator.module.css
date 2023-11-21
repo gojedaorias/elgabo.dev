@@ -50,7 +50,7 @@
   }
 
   .active {
-    background-color: var(--n8);
+    background-color: var(--green);
     border-radius: 100px;
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
