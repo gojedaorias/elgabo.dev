@@ -27,7 +27,7 @@ const links = [
   },
   {
     title: "Projects",
-    url: "/projects",
+    url: "/",
     icon: <Bag />,
   },
   {
