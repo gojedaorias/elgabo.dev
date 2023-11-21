@@ -41,8 +41,8 @@ const links = [
     icon: <Profile />,
   },
   {
-    title: "Blog",
-    url: "/blog",
+    title: "Writings",
+    url: "/writings",
     icon: <Writing />,
   },
   {
