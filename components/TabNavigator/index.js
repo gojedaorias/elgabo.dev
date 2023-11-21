@@ -73,9 +73,8 @@ const socials = [
 
 export default function TabNavigator() {
   const pathname = usePathname();
-  const navRefs = React.useRef([]);
-  navRefs.current = [];
   const [visible, setVisible] = React.useState(false);
+  const navRefs = React.useRef([]);
 
   const addToRefs = (el) => {
     if (el && !navRefs.current.includes(el)) {
@@ -84,7 +83,6 @@ export default function TabNavigator() {
   };
 
   React.useEffect(() => {
-    // Find the active nav item and scroll it into view
     const activeNavItem = navRefs.current.find(
       (el) => el.getAttribute("data-url") === pathname
     );
@@ -120,14 +118,12 @@ export default function TabNavigator() {
   };
 
   return (
-    <motion.nav className={cn(styles.container)}>
-      {/* <motion.button
-        className={cn(styles.burger, {
-          [styles.burger_active]: visible,
-        })}
-        onClick={() => setVisible(!visible)}
-      ></motion.button> */}
-
+    <motion.nav
+      className={cn(styles.container)}
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
       <motion.div
         variants={container}
         initial="hidden"
