@@ -148,4 +148,14 @@
     font-size: 48px;
     line-height: 56px;
   }
+
+  .body-2-semibold {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .caption {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
