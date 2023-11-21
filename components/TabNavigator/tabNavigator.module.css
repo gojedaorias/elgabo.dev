@@ -24,7 +24,6 @@
     align-items: center;
     gap: 12px;
     padding: 12px 16px;
-    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
   .socials {
