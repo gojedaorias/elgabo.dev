@@ -19,59 +19,7 @@ import {
 } from "../Icons";
 import { LayoutGroup, motion } from "framer-motion";
 
-const links = [
-  {
-    title: "Home",
-    url: "/",
-    icon: <Home />,
-  },
-  {
-    title: "Projects",
-    url: "/projects",
-    icon: <Bag />,
-  },
-  {
-    title: "Store",
-    url: "/store",
-    icon: <Store />,
-  },
-  {
-    title: "About",
-    url: "/about",
-    icon: <Profile />,
-  },
-  {
-    title: "Writings",
-    url: "/writings",
-    icon: <Writing />,
-  },
-  {
-    title: "Contact",
-    url: "/contact",
-    icon: <Email />,
-  },
-];
-
-const socials = [
-  {
-    url: "https://www.instagram.com/",
-    icon: <Instagram />,
-  },
-  {
-    url: "https://www.twitter.com/",
-    icon: <X />,
-  },
-  {
-    url: "https://www.youtube.com/",
-    icon: <Youtube />,
-  },
-  {
-    url: "https://www.linkedin.com/",
-    icon: <LinkedIn />,
-  },
-];
-
-export default function TabNavigator() {
+export default function TabNavigator({ links, socials }) {
   const pathname = usePathname();
   const [visible, setVisible] = React.useState(false);
   const navRefs = React.useRef([]);

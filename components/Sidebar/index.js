@@ -5,73 +5,9 @@ import styles from "./sidebar.module.css";
 import cn from "classnames";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import {
-  Bag,
-  Email,
-  Home,
-  Instagram,
-  LinkedIn,
-  Profile,
-  Store,
-  Writing,
-  X,
-  Youtube,
-} from "../Icons";
 import { motion } from "framer-motion";
 
-const links = [
-  {
-    title: "Home",
-    url: "/",
-    icon: <Home />,
-  },
-  {
-    title: "Projects",
-    url: "/projects",
-    icon: <Bag />,
-  },
-  {
-    title: "Store",
-    url: "/store",
-    icon: <Store />,
-  },
-  {
-    title: "About",
-    url: "/about",
-    icon: <Profile />,
-  },
-  {
-    title: "Blog",
-    url: "/blog",
-    icon: <Writing />,
-  },
-  {
-    title: "Contact",
-    url: "/contact",
-    icon: <Email />,
-  },
-];
-
-const socials = [
-  {
-    url: "https://www.instagram.com/",
-    icon: <Instagram />,
-  },
-  {
-    url: "https://www.twitter.com/",
-    icon: <X />,
-  },
-  {
-    url: "https://www.youtube.com/",
-    icon: <Youtube />,
-  },
-  {
-    url: "https://www.linkedin.com/",
-    icon: <LinkedIn />,
-  },
-];
-
-export default function Sidebar() {
+export default function Sidebar({ links, socials }) {
   const [visible, setVisible] = React.useState(false);
   const pathname = usePathname();
 
