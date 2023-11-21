@@ -72,30 +72,30 @@ export default function TabNavigator({ links, socials }) {
       initial="hidden"
       animate="show"
     >
-      <motion.div
+      {/* <motion.div
         variants={container}
         initial="hidden"
         animate="show"
         className={styles.nav_links}
-      >
-        {links.map((link, index) => (
-          <Link href={link.url} key={index}>
-            <motion.button
-              variants={itemVariant}
-              ref={addToRefs}
-              data-url={link.url}
-              className={cn("btn-2", styles.nav_item, {
-                [styles.active]: pathname === link.url,
-              })}
-            >
-              {link.icon}
-              <span className={cn("btn-2", styles.nav_link_text)}>
-                {link.title}
-              </span>
-            </motion.button>
-          </Link>
-        ))}
-      </motion.div>
+      > */}
+      {links.map((link, index) => (
+        <Link href={link.url} key={index}>
+          <motion.button
+            variants={itemVariant}
+            ref={addToRefs}
+            data-url={link.url}
+            className={cn("btn-2", styles.nav_item, {
+              [styles.active]: pathname === link.url,
+            })}
+          >
+            {link.icon}
+            <span className={cn("btn-2", styles.nav_link_text)}>
+              {link.title}
+            </span>
+          </motion.button>
+        </Link>
+      ))}
+      {/* </motion.div> */}
 
       <motion.div
         className={styles.socials}
