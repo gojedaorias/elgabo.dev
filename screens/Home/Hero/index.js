@@ -14,7 +14,7 @@ export default function Hero() {
             <div className={styles.avatar_container}>
               <img
                 className={styles.avatar_image}
-                src="/avatars/01.jpg"
+                src="/logo.png"
                 alt="avatar"
               />
             </div>
