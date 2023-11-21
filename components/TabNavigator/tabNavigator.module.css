@@ -1,9 +1,10 @@
-.nav {
+.container {
   display: none;
 }
 
 @media (max-width: 430px) {
   .container {
+    display: block;
     width: 100%;
     background-color: var(--background);
     position: fixed;
