@@ -29,9 +29,7 @@ export default function Hero() {
           <div
             style={{ position: "relative", width: "100%", overflow: "hidden" }}
           >
-            <h1 className={cn("hero")}>
-              Programming <br /> and nothin else.
-            </h1>
+            <h1 className={cn("hero")}>I design + code apps & websites.</h1>
 
             <motion.div
               initial={{ width: "100%" }}
