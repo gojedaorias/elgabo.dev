@@ -30,6 +30,7 @@
     align-items: center;
     gap: 12px;
     padding: 12px 16px;
+    border-radius: 100px;
   }
 
   .socials {
@@ -51,8 +52,7 @@
 
   .active {
     background-color: var(--n8);
-    border-radius: 100px;
-    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    /* transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); */
   }
 
   .active svg {

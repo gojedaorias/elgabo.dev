@@ -5,19 +5,7 @@ import styles from "./tabNavigator.module.css";
 import cn from "classnames";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import {
-  Bag,
-  Email,
-  Home,
-  Instagram,
-  LinkedIn,
-  Profile,
-  Store,
-  Writing,
-  X,
-  Youtube,
-} from "../Icons";
-import { LayoutGroup, motion } from "framer-motion";
+import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 
 export default function TabNavigator({ links, socials }) {
   const pathname = usePathname();
@@ -61,6 +49,7 @@ export default function TabNavigator({ links, socials }) {
       opacity: 1,
       transition: {
         duration: 0.2,
+        ease: "easeInOut",
       },
     },
   };
@@ -72,30 +61,26 @@ export default function TabNavigator({ links, socials }) {
       initial="hidden"
       animate="show"
     >
-      {/* <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className={styles.nav_links}
-      > */}
-      {links.map((link, index) => (
-        <Link href={link.url} key={index}>
-          <motion.button
-            variants={itemVariant}
-            ref={addToRefs}
-            data-url={link.url}
-            className={cn("btn-2", styles.nav_item, {
-              [styles.active]: pathname === link.url,
-            })}
-          >
-            {link.icon}
-            <span className={cn("btn-2", styles.nav_link_text)}>
-              {link.title}
-            </span>
-          </motion.button>
-        </Link>
-      ))}
-      {/* </motion.div> */}
+      <LayoutGroup>
+        {links.map((link, index) => (
+          <Link href={link.url} key={index}>
+            <motion.button
+              layout
+              variants={itemVariant}
+              ref={addToRefs}
+              data-url={link.url}
+              className={cn("btn-2", styles.nav_item, {
+                [styles.active]: pathname === link.url,
+              })}
+            >
+              {link.icon}
+              <span className={cn("btn-2", styles.nav_link_text)}>
+                {link.title}
+              </span>
+            </motion.button>
+          </Link>
+        ))}
+      </LayoutGroup>
 
       <motion.div
         className={styles.socials}
