@@ -52,7 +52,6 @@
 
   .active {
     background-color: var(--n8);
-    /* transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); */
   }
 
   .active svg {
