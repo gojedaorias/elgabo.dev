@@ -1,0 +1,35 @@
+.section {
+  padding: 80px;
+  position: relative;
+}
+
+.text {
+  color: var(--n4);
+}
+
+.title {
+  margin-top: 24px;
+}
+
+.tools {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 64px;
+  }
+
+  .tools {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 430px) {
+  .section {
+    padding: 48px 32px;
+  }
+}

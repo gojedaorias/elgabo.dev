@@ -1,0 +1,19 @@
+.container {
+  padding: 24px;
+  background-color: var(--n1);
+  border-radius: 24px;
+  height: auto;
+}
+
+.title_container {
+  margin-top: 40px;
+}
+
+.title {
+  color: var(--n8);
+  margin-bottom: 8px;
+}
+
+.text {
+  color: var(--n4);
+}
