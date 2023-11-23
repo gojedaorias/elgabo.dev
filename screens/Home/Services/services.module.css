@@ -21,6 +21,10 @@
   .section {
     padding: 64px;
   }
+
+  .services {
+    margin-top: 48px;
+  }
 }
 
 @media (max-width: 430px) {

@@ -7,12 +7,7 @@ export default function Tool({ icon, title, text, url }) {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <div className={styles.container}>
-        <div
-          className={styles.arrow_up}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className={styles.arrow_up}>
           <RightUp />
         </div>
         <div className={styles.icon_container}>{icon}</div>

@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import styles from "./home.module.css";
 import Services from "./Services";
 import Stack from "./Stack";
+import Introduction from "./Introduction";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <Hero />
       <Services />
       <Stack />
+      <Introduction />
     </main>
   );
 }
