@@ -121,6 +121,10 @@
     height: 150px;
   }
 
+  .products_container {
+    margin-top: 48px;
+  }
+
   .products {
     grid-template-columns: 1fr;
     grid-gap: 16px;
