@@ -16,7 +16,8 @@
 }
 
 [class^="button"]:hover {
-  background-color: #1189ff;
+  background-color: var(--green-600);
+  color: var(--n8);
 }
 
 .button-stroke {

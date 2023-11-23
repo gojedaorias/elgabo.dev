@@ -68,10 +68,6 @@
   letter-spacing: 6px;
   transform-origin: 250px 250px;
   fill: var(--n2);
-  /* animation-name: change-color;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite; */
 }
 
 .rotated_text {
@@ -83,17 +79,22 @@
   animation-iteration-count: infinite;
 }
 
+.products {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
 @keyframes change-color {
   0% {
-    fill: var(--n2); /* Starting color */
+    fill: var(--n2);
   }
   50% {
-    fill: var(--green); /* Midway color */
+    fill: var(--green);
   }
   100% {
-    fill: var(
-      --n2
-    ); /* Ending color, can be different or the same as the starting color */
+    fill: var(--n2);
   }
 }
 
@@ -111,6 +112,10 @@
   .rotated_text {
     width: 150px;
     height: 150px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
   }
 }
 

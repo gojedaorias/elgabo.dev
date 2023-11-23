@@ -4,6 +4,8 @@ import React from "react";
 import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
+import { Product } from "@/components/Cards";
+import { products } from "@/mocks/products";
 
 export default function Hero() {
   return (
@@ -110,6 +112,16 @@ export default function Hero() {
               </svg>
             </div>
           </div>
+        </div>
+
+        <div className={styles.products}>
+          {products.map((product, index) => (
+            <Product
+              key={product.title}
+              product={product}
+              isNew={index === 0}
+            />
+          ))}
         </div>
       </section>
     </main>

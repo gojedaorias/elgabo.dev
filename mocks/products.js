@@ -1,0 +1,52 @@
+const products = [
+  {
+    title: "DataPeak",
+    description: "Advanced analytics dashboard; intuitive, efficient.",
+    price: 59.99,
+    status: [
+      {
+        title: "New",
+      },
+    ],
+    image: "/images/products/product-01.png",
+    url: "/products/datapeak",
+  },
+  {
+    title: "GreenMart",
+    description: "Sustainable eCommerce platform; sleek, user-friendly.",
+    price: 49.99,
+    status: [
+      {
+        title: "New",
+      },
+    ],
+    image: "/images/products/product-02.png",
+    url: "/products/greenmart",
+  },
+  {
+    title: "NetWords",
+    description: "Blogging template; tech-savvy, adaptable.",
+    price: 89.99,
+    status: [
+      {
+        title: "New",
+      },
+    ],
+    image: "/images/products/product-03.png",
+    url: "/products/networks",
+  },
+  {
+    title: "WellTrack",
+    description: "Health tracking app; personalized, engaging.",
+    price: 69.99,
+    status: [
+      {
+        title: "New",
+      },
+    ],
+    image: "/images/products/product-04.png",
+    url: "/products/welltrack",
+  },
+];
+
+export { products };

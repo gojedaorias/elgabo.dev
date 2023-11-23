@@ -5,7 +5,7 @@ import styles from "./tabNavigator.module.css";
 import cn from "classnames";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { LayoutGroup, motion } from "framer-motion";
 
 export default function TabNavigator({ links, socials }) {
   const pathname = usePathname();
@@ -43,7 +43,7 @@ export default function TabNavigator({ links, socials }) {
     },
   };
 
-  const itemVariant = {
+  const item = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -66,7 +66,7 @@ export default function TabNavigator({ links, socials }) {
           <Link href={link.url} key={index}>
             <motion.button
               layout
-              variants={itemVariant}
+              variants={item}
               ref={addToRefs}
               data-url={link.url}
               className={cn("btn-2", styles.nav_item, {

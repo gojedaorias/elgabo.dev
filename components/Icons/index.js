@@ -8,6 +8,7 @@ import Instagram from "./Instagram";
 import X from "./X";
 import Youtube from "./Youtube";
 import LinkedIn from "./LinkedIn";
+import RightUp from "./RightUp";
 
 export {
   Home,
@@ -20,4 +21,5 @@ export {
   X,
   Youtube,
   LinkedIn,
+  RightUp,
 };
