@@ -6,6 +6,7 @@ import cn from "classnames";
 import { motion } from "framer-motion";
 import { Product } from "@/components/Cards";
 import { products } from "@/mocks/products";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -127,9 +128,11 @@ export default function Hero() {
             ))}
           </div>
 
-          <button className={cn("button-stroke", styles.secondary_button)}>
-            See all
-          </button>
+          <Link href="/store">
+            <button className={cn("button-stroke", styles.secondary_button)}>
+              See all
+            </button>
+          </Link>
         </div>
       </section>
     </main>

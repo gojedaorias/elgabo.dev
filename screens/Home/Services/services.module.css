@@ -1,0 +1,30 @@
+.section {
+  padding: 80px;
+  position: relative;
+}
+
+.text {
+  color: var(--n4);
+}
+
+.title {
+  margin-top: 24px;
+}
+
+.services {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 64px;
+  }
+}
+
+@media (max-width: 430px) {
+  .section {
+    padding: 48px 32px;
+  }
+}

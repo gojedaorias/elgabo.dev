@@ -5,7 +5,7 @@ import { RightUp } from "@/components/Icons";
 
 export default function Product({ product, isNew }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.card}>
       <div className={styles.image_container}>
         <img className={styles.image} src={product.image} alt="product" />
       </div>

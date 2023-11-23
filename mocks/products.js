@@ -8,7 +8,7 @@ const products = [
         title: "New",
       },
     ],
-    image: "/images/products/product-01.png",
+    image: "/images/products/product-1.png",
     url: "/products/datapeak",
   },
   {
@@ -20,7 +20,7 @@ const products = [
         title: "New",
       },
     ],
-    image: "/images/products/product-02.png",
+    image: "/images/products/product-2.png",
     url: "/products/greenmart",
   },
   {
@@ -32,7 +32,7 @@ const products = [
         title: "New",
       },
     ],
-    image: "/images/products/product-03.png",
+    image: "/images/products/product-3.png",
     url: "/products/networks",
   },
   {
@@ -44,7 +44,7 @@ const products = [
         title: "New",
       },
     ],
-    image: "/images/products/product-04.png",
+    image: "/images/products/product-4.png",
     url: "/products/welltrack",
   },
 ];
