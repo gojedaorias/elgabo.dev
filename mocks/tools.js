@@ -26,13 +26,13 @@ const tools = [
     icon: <Arc />,
     title: "Arc",
     text: "Browser",
-    url: "https://arc.dev/",
+    url: "https://arc.net/",
   },
   {
     icon: <IconlyPro />,
     title: "Iconly Pro",
     text: "Icons",
-    url: "https://iconly.app/",
+    url: "https://iconly.pro/",
   },
   {
     icon: <VSCode />,
