@@ -8,7 +8,7 @@
     box-sizing: border-box;
     /* background-color: var(--background); */
     background: var(--green-950);
-    border: 1.5px solid var(--green-900);
+    border: 2px solid var(--green-900);
     position: fixed;
     bottom: 24px;
     right: 32px;
@@ -57,7 +57,7 @@
   }
 
   .active svg {
-    stroke: var(--n2);
+    stroke: var(--green-950);
   }
 
   .active span {

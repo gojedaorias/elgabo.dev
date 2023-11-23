@@ -98,7 +98,7 @@
 
 .status {
   background: var(--green-950);
-  border: 1.5px solid var(--green-900);
+  border: 2px solid var(--green-900);
   padding: 6px 12px;
   border-radius: 8px;
 }
