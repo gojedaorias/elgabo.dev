@@ -1,13 +1,13 @@
 .container {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
+  border-radius: 24px;
 }
 
 .image_container {
   position: relative;
   width: 100%;
-  border-radius: 24px;
-  overflow: hidden;
 }
 
 .image {
@@ -66,6 +66,7 @@
 .container:hover .content {
   opacity: 0;
   visibility: hidden;
+  transform: translateY(100%);
 }
 
 .icon {

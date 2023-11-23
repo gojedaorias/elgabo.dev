@@ -6,8 +6,7 @@
   .container {
     display: flex;
     box-sizing: border-box;
-    /* background-color: var(--background); */
-    background: var(--n1);
+    background: var(--background);
     position: fixed;
     bottom: 24px;
     right: 32px;
