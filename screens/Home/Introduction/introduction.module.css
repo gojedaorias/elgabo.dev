@@ -50,6 +50,17 @@
     grid-template-columns: 1fr;
     grid-gap: 48px;
   }
+
+  .breakline {
+    flex-shrink: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--n6);
+  }
+
+  .image_container {
+    height: 288px;
+  }
 }
 
 @media (max-width: 430px) {
