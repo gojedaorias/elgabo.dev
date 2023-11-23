@@ -32,9 +32,7 @@ export default function Hero() {
             style={{ position: "relative", width: "100%", overflow: "hidden" }}
           >
             <h1 className={cn("hero", styles.title)}>
-              I design + code
-              <br />
-              apps and websites.
+              I design + code apps & websites.
             </h1>
 
             <motion.div
@@ -118,14 +116,20 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className={styles.products}>
-          {products.map((product, index) => (
-            <Product
-              key={product.title}
-              product={product}
-              isNew={index === 0}
-            />
-          ))}
+        <div className={styles.products_container}>
+          <div className={styles.products}>
+            {products.map((product, index) => (
+              <Product
+                key={product.title}
+                product={product}
+                isNew={index === 0}
+              />
+            ))}
+          </div>
+
+          <button className={cn("button-stroke", styles.secondary_button)}>
+            See all
+          </button>
         </div>
       </section>
     </main>

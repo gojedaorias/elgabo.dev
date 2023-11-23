@@ -79,8 +79,15 @@
   animation-iteration-count: infinite;
 }
 
-.products {
+.products_container {
   margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
