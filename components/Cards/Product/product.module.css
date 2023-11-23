@@ -97,8 +97,8 @@
 }
 
 .status {
-  background: #1f2e05;
-  border: 1.5px solid #3d5314;
+  background: var(--green-950);
+  border: 1.5px solid var(--green-900);
   padding: 6px 12px;
   border-radius: 8px;
 }
