@@ -9,6 +9,14 @@ import X from "./X";
 import Youtube from "./Youtube";
 import LinkedIn from "./LinkedIn";
 import RightUp from "./RightUp";
+import Figma from "./Figma";
+import Framer from "./Framer";
+import Arc from "./Arc";
+import IconlyPro from "./IconlyPro";
+import VSCode from "./VSCode";
+import ReactNative from "./ReactNative";
+import Nextjs from "./Nextjs";
+import Code from "./Code";
 
 export {
   Home,
@@ -22,4 +30,12 @@ export {
   Youtube,
   LinkedIn,
   RightUp,
+  Figma,
+  Framer,
+  Arc,
+  IconlyPro,
+  VSCode,
+  ReactNative,
+  Nextjs,
+  Code,
 };

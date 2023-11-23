@@ -12,9 +12,9 @@
 .image_container {
   height: 288px;
   width: 388px;
-  position: absolute;
+  position: fixed;
   bottom: 24px;
-  right: 24px;
+  right: 44px;
   opacity: 0;
   visibility: hidden;
   border-radius: 24px;
