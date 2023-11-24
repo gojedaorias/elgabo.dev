@@ -38,10 +38,6 @@
   margin-bottom: 48px;
 }
 
-.title .active svg {
-  transform: rotate(45deg);
-}
-
 .title svg {
   display: none;
 }
@@ -109,6 +105,10 @@
     stroke: var(--n8);
     margin-left: 24px;
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .rotate svg {
+    transform: rotate(45deg);
   }
 
   .links {

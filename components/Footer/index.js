@@ -31,9 +31,12 @@ export default function Footer() {
                 onClick={() => toggleIndex(index)}
               >
                 {section.title}
-                <Plus />
+                <div className={cn({ [styles.rotate]: visible === index })}>
+                  <Plus />
+                </div>
               </div>
               <div
+                layout
                 className={cn(styles.links, {
                   [styles.active]: visible === index,
                 })}
