@@ -108,7 +108,7 @@
   }
 
   .rotate svg {
-    transform: rotate(45deg);
+    stroke: var(--green);
   }
 
   .links {
