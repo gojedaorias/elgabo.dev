@@ -16,7 +16,7 @@ export default function Subscribe({ className }) {
       </div>
 
       <p className={cn("caption", styles.placeholder)}>
-        Subscribe to the newsletter, no spam!
+        Stay updated! No spam, only the good stuff.
       </p>
     </div>
   );
