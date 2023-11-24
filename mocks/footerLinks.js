@@ -50,7 +50,7 @@ const footerLinks = [
     ],
   },
   {
-    title: "Reosurces",
+    title: "Resources",
     links: [
       {
         title: "Newsletter",
