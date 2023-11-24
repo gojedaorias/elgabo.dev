@@ -36,7 +36,7 @@
 
   .container {
     grid-template-columns: auto;
-    grid-gap: 32px;
+    grid-gap: 24px;
   }
 }
 

@@ -6,6 +6,7 @@ import Stack from "./Stack";
 import Introduction from "./Introduction";
 import LatestPosts from "./LatestPosts";
 import CTA from "./CTA";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Introduction />
       <LatestPosts />
       <CTA />
+      <Footer />
     </main>
   );
 }
