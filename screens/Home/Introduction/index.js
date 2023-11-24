@@ -14,17 +14,9 @@ export default function Introduction() {
         <div className={styles.breakline} />
 
         <div>
-          <video className={styles.image_container} autoPlay muted loop>
-            <source
-              className={styles.image}
-              src="/showreel.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          {/* <div className={styles.image_container}>
-            <img src="/logo.png" className={styles.image} />
-          </div> */}
+          <div className={styles.image_container}>
+            <img src="/intro-2.jpg" className={styles.image} />
+          </div>
 
           <p className={cn("body-2", styles.subtitle)}>
             I specialize in crafting user-friendly websites and apps, blending
