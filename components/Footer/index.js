@@ -9,14 +9,18 @@ export default function Footer() {
     <footer className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
-          {footerLinks.map((section) => (
-            <div>
+          {footerLinks.map((section, index) => (
+            <div key={index}>
               <div className={cn("body-2-semibold", styles.title)}>
                 {section.title}
               </div>
               <div className={styles.links}>
-                {section.links.map((link) => (
-                  <a className={cn("btn-2", styles.link)} href={link.href}>
+                {section.links.map((link, index) => (
+                  <a
+                    key={index}
+                    className={cn("btn-2", styles.link)}
+                    href={link.href}
+                  >
                     {link.title}
                   </a>
                 ))}

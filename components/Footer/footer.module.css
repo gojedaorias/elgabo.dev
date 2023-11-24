@@ -71,6 +71,10 @@
   .content {
     grid-template-columns: repeat(2, auto);
   }
+
+  .title {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 430px) {
