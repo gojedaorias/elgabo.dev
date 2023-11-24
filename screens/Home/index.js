@@ -5,6 +5,7 @@ import Services from "./Services";
 import Stack from "./Stack";
 import Introduction from "./Introduction";
 import LatestPosts from "./LatestPosts";
+import CTA from "./CTA";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Stack />
       <Introduction />
       <LatestPosts />
+      <CTA />
     </main>
   );
 }

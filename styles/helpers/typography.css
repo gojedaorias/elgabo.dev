@@ -1,4 +1,5 @@
 .hero,
+.h1,
 .h2,
 .h3,
 .h4,
@@ -137,6 +138,11 @@
   .hero {
     font-size: 64px;
     line-height: 64px;
+  }
+
+  .h1 {
+    font-size: 48px;
+    line-height: 56px;
   }
 
   .h2 {
