@@ -39,8 +39,6 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className={styles.breakline} />
-
       <div className={styles.bottom}>
         <div className={cn("caption", styles.copyright)}>
           Angel Uriostegui © 2023
