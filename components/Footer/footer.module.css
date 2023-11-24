@@ -113,14 +113,11 @@
 
   .links {
     display: none;
+    padding: 0 0 24px;
   }
 
   .active {
     display: flex;
-  }
-
-  .block .active {
-    padding-bottom: 32px;
   }
 
   .subscribe {
