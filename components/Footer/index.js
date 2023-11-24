@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./footer.module.css";
 import cn from "classnames";
@@ -5,19 +7,37 @@ import { footerLinks } from "@/mocks/footerLinks";
 import { Dribbble, Instagram, Plus, X } from "../Icons";
 import TextInput from "../TextInput";
 import Subscribe from "../Subscribe";
+import { motion, LayoutGroup } from "framer-motion";
 
 export default function Footer() {
+  const [visible, setVisible] = React.useState(null);
+
+  const toggleIndex = (index) => {
+    if (visible === index) {
+      setVisible(null);
+    } else {
+      setVisible(index);
+    }
+  };
+
   return (
     <footer className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.content}>
+        <LayoutGroup className={styles.content}>
           {footerLinks.map((section, index) => (
-            <div key={index} className={styles.block}>
-              <div className={cn("body-2-semibold", styles.title)}>
+            <motion.div key={index} className={styles.block}>
+              <div
+                className={cn("body-2-semibold", styles.title)}
+                onClick={() => toggleIndex(index)}
+              >
                 {section.title}
                 <Plus />
               </div>
-              <div className={styles.links}>
+              <div
+                className={cn(styles.links, {
+                  [styles.active]: visible === index,
+                })}
+              >
                 {section.links.map((link, index) => (
                   <a
                     key={index}
@@ -28,9 +48,9 @@ export default function Footer() {
                   </a>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </LayoutGroup>
 
         <div className={styles.newsletter}>
           <div className={cn("body-2-semibold", styles.title)}>Newsletter</div>

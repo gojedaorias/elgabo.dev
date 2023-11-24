@@ -115,6 +115,14 @@
     display: none;
   }
 
+  .active {
+    display: flex;
+  }
+
+  .block .active {
+    padding-bottom: 32px;
+  }
+
   .subscribe {
     margin-top: 0;
   }
