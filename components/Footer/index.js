@@ -5,9 +5,8 @@ import styles from "./footer.module.css";
 import cn from "classnames";
 import { footerLinks } from "@/mocks/footerLinks";
 import { Dribbble, Instagram, Plus, X } from "../Icons";
-import TextInput from "../TextInput";
 import Subscribe from "../Subscribe";
-import { motion, LayoutGroup } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   const [visible, setVisible] = React.useState(null);
@@ -20,10 +19,24 @@ export default function Footer() {
     }
   };
 
+  const container = {
+    open: {
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+    },
+    collapsed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    },
+  };
+
+  const variant = {
+    open: { opacity: 1, y: 0 },
+    collapsed: { opacity: 0, y: -20 },
+  };
+
   return (
     <footer className={styles.section}>
       <div className={styles.container}>
-        <LayoutGroup className={styles.content}>
+        <div className={styles.content}>
           {footerLinks.map((section, index) => (
             <motion.div key={index} className={styles.block}>
               <div
@@ -35,25 +48,28 @@ export default function Footer() {
                   <Plus />
                 </div>
               </div>
-              <div
-                layout
+              <motion.div
+                initial="collapsed"
+                animate={visible === index ? "open" : "collapsed"}
+                variants={container}
                 className={cn(styles.links, {
                   [styles.active]: visible === index,
                 })}
               >
                 {section.links.map((link, index) => (
-                  <a
+                  <motion.a
                     key={index}
+                    variants={variant}
                     className={cn("btn-2", styles.link)}
                     href={link.href}
                   >
                     {link.title}
-                  </a>
+                  </motion.a>
                 ))}
-              </div>
+              </motion.div>
             </motion.div>
           ))}
-        </LayoutGroup>
+        </div>
 
         <div className={styles.newsletter}>
           <div className={cn("body-2-semibold", styles.title)}>Newsletter</div>
