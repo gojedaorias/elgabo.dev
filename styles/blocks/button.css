@@ -39,17 +39,3 @@
 .button-black:hover {
   background: var(--n2);
 }
-
-.button-svg {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background-color: var(--green);
-}
-
-.button-svg svg {
-  stroke: var(--n2);
-}

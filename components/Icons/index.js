@@ -19,6 +19,7 @@ import Nextjs from "./Nextjs";
 import Code from "./Code";
 import ArrowRight from "./ArrowRight";
 import Dribbble from "./Dribbble";
+import Plus from "./Plus";
 
 export {
   Home,
@@ -42,4 +43,5 @@ export {
   Code,
   ArrowRight,
   Dribbble,
+  Plus,
 };

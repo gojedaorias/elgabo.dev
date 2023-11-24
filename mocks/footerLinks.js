@@ -29,7 +29,7 @@ const footerLinks = [
     ],
   },
   {
-    title: "Popular products",
+    title: "Popular templates",
     links: [
       {
         title: "DataPeak",

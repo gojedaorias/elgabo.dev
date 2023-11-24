@@ -24,7 +24,6 @@
 }
 
 .links {
-  margin-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -36,6 +35,15 @@
 
 .title {
   color: var(--n8);
+  margin-bottom: 48px;
+}
+
+.title .active svg {
+  transform: rotate(45deg);
+}
+
+.title svg {
+  display: none;
 }
 
 .subscribe {
@@ -93,18 +101,42 @@
     padding-top: 64px;
   }
 
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin-bottom: 0;
+  }
+
+  .title svg {
+    display: inline-block;
+    flex-shrink: 0;
+    stroke: var(--n8);
+    margin-left: 24px;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .links {
+    display: none;
+  }
+
   .subscribe {
-    margin-top: 32px;
+    margin-top: 0;
+  }
+
+  .block {
+    padding: 0 32px;
+  }
+
+  .newsletter {
+    padding: 0 32px 32px;
   }
 }
 
 @media (max-width: 430px) {
   .section {
     margin-bottom: 96px;
-  }
-  .newsletter,
-  .block {
-    padding: 32px;
   }
 
   .bottom {

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./footer.module.css";
 import cn from "classnames";
 import { footerLinks } from "@/mocks/footerLinks";
-import { Dribbble, Instagram, X } from "../Icons";
+import { Dribbble, Instagram, Plus, X } from "../Icons";
 import TextInput from "../TextInput";
 import Subscribe from "../Subscribe";
 
@@ -15,6 +15,7 @@ export default function Footer() {
             <div key={index} className={styles.block}>
               <div className={cn("body-2-semibold", styles.title)}>
                 {section.title}
+                <Plus />
               </div>
               <div className={styles.links}>
                 {section.links.map((link, index) => (
