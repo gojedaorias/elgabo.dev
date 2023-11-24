@@ -7,11 +7,11 @@ import { ArrowRight } from "../Icons";
 export default function Subscribe({ className }) {
   return (
     <div className={cn(className, styles.container)}>
-      <div className={cn(className, styles.content)}>
+      <div className={styles.content}>
         <TextInput />
 
-        <button className={cn("button", styles.button)}>
-          <ArrowRight />
+        <button className={cn("", styles.button)}>
+          <ArrowRight className={styles.icon} />
         </button>
       </div>
 

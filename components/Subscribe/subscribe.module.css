@@ -1,27 +1,23 @@
 .content {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
-.input {
+.button {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 12px;
-  padding: 16px 16px;
-  background-color: var(--n2);
-  color: var(--n8);
-  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.input::placeholder {
-  color: var(--n4);
-}
-
-.input:hover,
-.input:focus {
-  box-shadow: 0 0 0 2px var(--green);
+  background-color: var(--green);
+  flex-shrink: 0;
 }
 
 .button svg {
   stroke: var(--n2);
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .button:hover svg {
