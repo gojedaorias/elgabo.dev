@@ -17,6 +17,8 @@ import VSCode from "./VSCode";
 import ReactNative from "./ReactNative";
 import Nextjs from "./Nextjs";
 import Code from "./Code";
+import ArrowRight from "./ArrowRight";
+import Dribbble from "./Dribbble";
 
 export {
   Home,
@@ -38,4 +40,6 @@ export {
   ReactNative,
   Nextjs,
   Code,
+  ArrowRight,
+  Dribbble,
 };

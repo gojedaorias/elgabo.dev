@@ -3,83 +3,113 @@
   margin-bottom: 24px;
   margin-left: 24px;
   border-radius: 24px;
-  padding: 80px;
   position: relative;
   background-color: var(--background);
+  overflow: hidden;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
+.container,
 .content {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 48px;
+  display: flex;
 }
 
-.breakline {
-  width: 100%;
-  height: 1px;
-  background-color: var(--n3);
+.block {
+  flex-grow: 1;
+  padding: 48px 64px;
+}
+
+.newsletter {
+  flex-grow: 1;
+  padding: 48px 64px 48px 0;
 }
 
 .links {
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.link,
-.text {
+.link {
   color: var(--n4);
-  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.link:hover {
-  color: var(--n8);
 }
 
 .title {
-  margin-bottom: 48px;
   color: var(--n8);
+}
+
+.subscribe {
+  margin-top: 48px;
+}
+
+.breakline {
+  width: 100%;
+  height: 1px;
+  background-color: var(--n2);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 64px;
+  background-color: var(--n1);
+}
+
+.copyright {
+  color: var(--n4);
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
 }
 
 .socials svg {
   stroke: var(--n8);
-  cursor: pointer;
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
 }
 
 .socials svg:hover {
   stroke: var(--green);
 }
 
-.copyright {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 @media (max-width: 1024px) {
-  .section {
-    padding: 64px;
-  }
-
+  .container,
   .content {
-    grid-template-columns: repeat(2, auto);
+    flex-direction: column;
   }
 
-  .title {
-    margin-bottom: 32px;
+  .block,
+  .newsletter {
+    padding: 32px 48px;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: var(--n2);
+  }
+
+  .block:nth-child(1) {
+    padding-top: 64px;
+  }
+
+  .subscribe {
+    margin-top: 32px;
   }
 }
 
 @media (max-width: 430px) {
   .section {
-    padding: 64px 32px;
     margin-bottom: 96px;
+  }
+  .newsletter,
+  .block {
+    padding: 32px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
   }
 }

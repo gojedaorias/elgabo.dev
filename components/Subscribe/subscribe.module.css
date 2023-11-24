@@ -1,0 +1,34 @@
+.content {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  border-radius: 12px;
+  padding: 16px 16px;
+  background-color: var(--n2);
+  color: var(--n8);
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.input::placeholder {
+  color: var(--n4);
+}
+
+.input:hover,
+.input:focus {
+  box-shadow: 0 0 0 2px var(--green);
+}
+
+.button svg {
+  stroke: var(--n2);
+}
+
+.button:hover svg {
+  stroke: var(--n8);
+}
+
+.placeholder {
+  margin-top: 8px;
+  color: var(--n4);
+}
