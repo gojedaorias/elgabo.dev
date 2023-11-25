@@ -17,6 +17,7 @@
 
 .title svg {
   stroke: var(--n4);
+  flex-shrink: 0;
 }
 
 .active .title svg {
