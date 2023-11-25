@@ -37,7 +37,6 @@
   display: flex;
   gap: 64px;
   align-items: center;
-  overflow: hidden;
 }
 
 .company {
