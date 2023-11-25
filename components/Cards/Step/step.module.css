@@ -128,4 +128,9 @@
   .withBackground {
     height: 288px;
   }
+
+  .icon_container svg {
+    width: 38px;
+    height: 38px;
+  }
 }

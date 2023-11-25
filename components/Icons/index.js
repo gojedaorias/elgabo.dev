@@ -20,6 +20,7 @@ import Code from "./Code";
 import ArrowRight from "./ArrowRight";
 import Dribbble from "./Dribbble";
 import Plus from "./Plus";
+import Branch from "./Branch";
 
 export {
   Home,
@@ -44,4 +45,5 @@ export {
   ArrowRight,
   Dribbble,
   Plus,
+  Branch,
 };

@@ -1,4 +1,4 @@
-import { Instagram } from "@/components/Icons";
+import { Branch } from "@/components/Icons";
 
 const steps = [
   {
@@ -11,7 +11,7 @@ const steps = [
     title: "Ideate",
     description:
       "Developing innovative and tailored strategies to address your project's unique needs.",
-    icon: <Instagram />,
+    icon: <Branch />,
   },
   {
     title: "Design",
