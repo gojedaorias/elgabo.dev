@@ -6,7 +6,7 @@ import { articles } from "@/mocks/articles";
 
 export default function LatestPosts() {
   return (
-    <section className={styles.section}>
+    <section className={cn("section")}>
       <div className={styles.container}>
         <span className={cn("hairline-2", styles.text)}>Latest posts</span>
         <h1 className={cn("h2", styles.title)}>

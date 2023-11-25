@@ -7,34 +7,21 @@ import { motion } from "framer-motion";
 import { Product } from "@/components/Cards";
 import { products } from "@/mocks/products";
 import Link from "next/link";
+import { Bag } from "@/components/Icons";
 
 export default function Hero() {
   return (
     <main className={cn("section-hero")}>
       <section className={cn("container")}>
         <div className={styles.hero_content}>
-          <div className={styles.author}>
-            <div className={styles.avatar_container}>
-              <img
-                className={styles.avatar_image}
-                src="/logo.png"
-                alt="avatar"
-              />
-            </div>
-            <div>
-              <p className={cn("body-2-semibold", styles.caption)}>
-                Angel Uriostegui
-              </p>
-              <p className={cn("caption", styles.profession)}>Programming</p>
-            </div>
+          <div className={styles.icon_container}>
+            <Bag />
           </div>
 
           <div
             style={{ position: "relative", width: "100%", overflow: "hidden" }}
           >
-            <h1 className={cn("hero", styles.title)}>
-              I design + code apps & websites.
-            </h1>
+            <h1 className={cn("hero", styles.title)}>Handcrafted ideas.</h1>
 
             <motion.div
               initial={{ width: "100%" }}
@@ -61,7 +48,8 @@ export default function Hero() {
           <div className={styles.bottom_content}>
             <div>
               <p className={cn("body-1")}>
-                Bringing beauty to the web, one line of code at a time.
+                Crafting tailored web and app solutions that bring client ideas
+                to life.
               </p>
               <motion.button
                 whileHover={{

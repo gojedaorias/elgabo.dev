@@ -4,7 +4,7 @@ import cn from "classnames";
 
 export default function Introduction() {
   return (
-    <div className={styles.section}>
+    <div className={cn("section section-gray")}>
       <div className={styles.container}>
         <div className={styles.title_container}>
           <span className={cn("hairline-2", styles.text)}>Introduction</span>
