@@ -19,47 +19,28 @@ export default function Footer() {
     }
   };
 
-  const container = {
-    open: {
-      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
-    },
-    collapsed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 },
-    },
-  };
-
-  const variant = {
-    open: { opacity: 1, y: 0 },
-    collapsed: { opacity: 0, y: -20 },
-  };
-
   return (
     <footer className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
           {footerLinks.map((section, index) => (
-            <motion.div key={index} className={styles.block}>
+            <motion.div
+              key={index}
+              className={cn(styles.block, {
+                [styles.active]: visible === index,
+              })}
+            >
               <div
                 className={cn("body-2-semibold", styles.title)}
                 onClick={() => toggleIndex(index)}
               >
                 {section.title}
-                <div className={cn({ [styles.rotate]: visible === index })}>
-                  <Plus />
-                </div>
+                <Plus />
               </div>
-              <motion.div
-                initial="collapsed"
-                animate={visible === index ? "open" : "collapsed"}
-                variants={container}
-                className={cn(styles.links, {
-                  [styles.active]: visible === index,
-                })}
-              >
+              <motion.div className={styles.links}>
                 {section.links.map((link, index) => (
                   <motion.a
                     key={index}
-                    variants={window.innerWidth > 1024 ? "" : variant}
                     className={cn("btn-2", styles.link)}
                     href={link.href}
                   >

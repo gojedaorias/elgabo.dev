@@ -81,7 +81,6 @@
 
   .block,
   .newsletter {
-    padding: 32px 48px;
     border-width: 0 0 1px;
     border-style: solid;
     border-color: var(--n2);
@@ -91,12 +90,21 @@
     padding-top: 48px;
   }
 
+  .block {
+    padding: 0 32px;
+  }
+
+  .newsletter {
+    padding: 0 32px 32px;
+  }
+
   .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
     margin-bottom: 0;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
   .title svg {
@@ -104,10 +112,13 @@
     flex-shrink: 0;
     stroke: var(--n8);
     margin-left: 24px;
-    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
-  .rotate svg {
+  .active .title {
+    color: var(--green);
+  }
+
+  .active .title svg {
     stroke: var(--green);
   }
 
@@ -116,20 +127,12 @@
     padding: 0 0 24px;
   }
 
-  .active {
+  .active .links {
     display: flex;
   }
 
   .subscribe {
     margin-top: 0;
-  }
-
-  .block {
-    padding: 0 32px;
-  }
-
-  .newsletter {
-    padding: 0 32px 32px;
   }
 }
 
