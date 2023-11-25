@@ -53,6 +53,10 @@
     padding: 48px;
     flex-direction: column;
   }
+
+  .company svg {
+    width: 90px;
+  }
 }
 
 @media (max-width: 430px) {
