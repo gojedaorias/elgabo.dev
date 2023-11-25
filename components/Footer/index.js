@@ -11,8 +11,6 @@ import { motion } from "framer-motion";
 export default function Footer() {
   const [visible, setVisible] = React.useState(null);
 
-  const largeScreen = () => window.innerWidth > 1024;
-
   const toggleIndex = (index) => {
     if (visible === index) {
       setVisible(null);
@@ -33,11 +31,6 @@ export default function Footer() {
   const variant = {
     open: { opacity: 1, y: 0 },
     collapsed: { opacity: 0, y: -20 },
-  };
-
-  const largeVariant = {
-    open: { opacity: 1, x: 0 },
-    collapsed: { opacity: 1, x: 0 },
   };
 
   return (
@@ -66,7 +59,7 @@ export default function Footer() {
                 {section.links.map((link, index) => (
                   <motion.a
                     key={index}
-                    variants={largeScreen() ? largeVariant : variant}
+                    variants={window.innerWidth > 1024 ? "" : variant}
                     className={cn("btn-2", styles.link)}
                     href={link.href}
                   >
