@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Layout from "@/components/Layout";
 import FAQ from "./FAQ";
 import Process from "./Process";
+import Testimonials from "./Testimonials";
 
 export default function ProjectsPage() {
   return (
@@ -10,6 +11,7 @@ export default function ProjectsPage() {
       <Hero />
       <FAQ />
       <Process />
+      <Testimonials />
     </Layout>
   );
 }

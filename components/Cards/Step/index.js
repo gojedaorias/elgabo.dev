@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./step.module.css";
 import cn from "classnames";
-import { RightUp } from "@/components/Icons";
 
 export default function Step({
   icon,
