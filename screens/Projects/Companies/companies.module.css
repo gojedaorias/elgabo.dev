@@ -20,6 +20,12 @@
   margin-bottom: 16px;
 }
 
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 @media (max-width: 1024px) {
   .background {
     padding: 48px;
