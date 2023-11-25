@@ -1,3 +1,5 @@
+import { Instagram } from "@/components/Icons";
+
 const steps = [
   {
     title: "Empathize",
@@ -9,7 +11,7 @@ const steps = [
     title: "Ideate",
     description:
       "Developing innovative and tailored strategies to address your project's unique needs.",
-    image: "/images/steps/step-2.jpg",
+    icon: <Instagram />,
   },
   {
     title: "Design",

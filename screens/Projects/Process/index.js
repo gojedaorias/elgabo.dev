@@ -19,7 +19,7 @@ export default function Process() {
 
         <div className={styles.process_container}>
           {steps.map((step, index) => (
-            <Step key={index} {...step} />
+            <Step key={index} {...step} withBackground={index === 1} />
           ))}
         </div>
       </div>
