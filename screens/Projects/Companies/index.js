@@ -10,7 +10,7 @@ import { companies } from "@/mocks/companies";
 import { motion } from "framer-motion";
 
 export default function Companies() {
-  const doubledCompanies = [...companies, ...companies];
+  const continuousCompanies = [...companies, ...companies, ...companies];
 
   const singleSetWidth = 1024;
 
@@ -22,7 +22,7 @@ export default function Companies() {
       transition: {
         x: {
           repeat: Infinity,
-          duration: 20, // Adjust this duration based on desired speed
+          duration: 20,
           ease: "linear",
         },
       },
@@ -52,7 +52,7 @@ export default function Companies() {
           animate="animate"
           className={styles.companies}
         >
-          {doubledCompanies.map((company, index) => (
+          {continuousCompanies.map((company, index) => (
             <div key={index} className={styles.company}>
               {company.logo}
             </div>
