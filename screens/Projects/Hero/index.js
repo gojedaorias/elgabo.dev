@@ -4,10 +4,10 @@ import React from "react";
 import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
-import { Product } from "@/components/Cards";
-import { products } from "@/mocks/products";
+import { Project } from "@/components/Cards";
 import Link from "next/link";
 import { Bag } from "@/components/Icons";
+import { projects } from "@/mocks/projects";
 
 export default function Hero() {
   return (
@@ -105,10 +105,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className={styles.products_container}>
-          <div className={styles.products}>
-            {products.map((product, index) => (
-              <Product
+        <div className={styles.projects_container}>
+          <div className={styles.projects}>
+            {projects.map((product, index) => (
+              <Project
                 key={product.title}
                 product={product}
                 isNew={index === 0}
