@@ -1,4 +1,4 @@
-.card {
+.container {
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -16,11 +16,11 @@
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.card:hover .image {
+.container:hover .image {
   transform: scale(1.1);
 }
 
-.card:hover .image_container::before {
+.container:hover .image_container::before {
   background: none;
 }
 
@@ -64,7 +64,7 @@
   visibility: visible;
 }
 
-.card:hover .content {
+.container:hover .content {
   opacity: 0;
   visibility: hidden;
   transform: translateY(100%);
@@ -83,7 +83,7 @@
   stroke: var(--n6);
 }
 
-.card:hover .icon svg {
+.container:hover .icon svg {
   stroke: var(--green); /* Change color on hover */
 }
 

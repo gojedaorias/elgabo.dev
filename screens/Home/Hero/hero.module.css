@@ -66,8 +66,8 @@
 }
 
 .rotated_text {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   animation-name: rotate-circle;
   animation-duration: 10s;
   animation-timing-function: linear;

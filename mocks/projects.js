@@ -12,7 +12,7 @@ const projects = [
   {
     title: "AeroScan",
     description: "Drone-powered infrastructure inspection.",
-    image: "/images/projects/aeroscann.png",
+    image: "/images/projects/aero-scan.png",
   },
   {
     title: "LearnSphere",
