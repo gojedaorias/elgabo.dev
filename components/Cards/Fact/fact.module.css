@@ -1,0 +1,17 @@
+.container {
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #afc441;
+  padding-bottom: 32px;
+}
+
+.container:not(:first-child) {
+  padding-top: 32px;
+}
+
+.number {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+}

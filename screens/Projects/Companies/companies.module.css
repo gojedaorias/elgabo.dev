@@ -1,0 +1,34 @@
+.background {
+  display: flex;
+  align-items: center;
+  background: var(--green);
+  padding: 64px;
+  gap: 64px;
+  border-radius: 24px;
+}
+
+.text,
+.subtitle {
+  color: var(--n4);
+}
+
+.title {
+  margin-top: 24px;
+}
+
+.number {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+  .background {
+    padding: 48px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .background {
+    padding: 48px 32px;
+  }
+}

@@ -4,6 +4,8 @@ import Layout from "@/components/Layout";
 import FAQ from "./FAQ";
 import Process from "./Process";
 import Testimonials from "./Testimonials";
+import Introduction from "@/components/Introduction";
+import Companies from "./Companies";
 
 export default function ProjectsPage() {
   return (
@@ -12,6 +14,8 @@ export default function ProjectsPage() {
       <FAQ />
       <Process />
       <Testimonials />
+      <Introduction />
+      <Companies />
     </Layout>
   );
 }
