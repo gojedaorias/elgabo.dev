@@ -54,6 +54,10 @@
     flex-direction: column;
   }
 
+  .companies {
+    gap: 48px;
+  }
+
   .company svg {
     width: 90px;
   }
