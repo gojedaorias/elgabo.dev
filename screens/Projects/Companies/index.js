@@ -1,10 +1,34 @@
+"use client";
+
 import React from "react";
 import styles from "./companies.module.css";
 import cn from "classnames";
 import { facts } from "@/mocks/facts";
 import { Fact } from "@/components/Cards";
+import { Basecamp } from "@/components/Logos";
+import { companies } from "@/mocks/companies";
+import { motion } from "framer-motion";
 
 export default function Companies() {
+  const doubledCompanies = [...companies, ...companies];
+
+  const singleSetWidth = 1024;
+
+  const startPosition = -singleSetWidth / 2;
+
+  const scrollVariants = {
+    animate: {
+      x: [startPosition, startPosition + singleSetWidth],
+      transition: {
+        x: {
+          repeat: Infinity,
+          duration: 20, // Adjust this duration based on desired speed
+          ease: "linear",
+        },
+      },
+    },
+  };
+
   return (
     <section className={cn("section")}>
       <div className={styles.container}>
@@ -22,6 +46,18 @@ export default function Companies() {
             ))}
           </div>
         </div>
+
+        <motion.div
+          variants={scrollVariants}
+          animate="animate"
+          className={styles.companies}
+        >
+          {doubledCompanies.map((company, index) => (
+            <div key={index} className={styles.company}>
+              {company.logo}
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
