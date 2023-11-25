@@ -4,5 +4,6 @@ import Tool from "./Tool";
 import Article from "./Article";
 import Project from "./Project";
 import FaqItem from "./FaqItem";
+import Step from "./Step";
 
-export { Product, Service, Tool, Article, Project, FaqItem };
+export { Product, Service, Tool, Article, Project, FaqItem, Step };
