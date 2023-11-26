@@ -10,6 +10,12 @@
 
 .title {
   margin-bottom: 4px;
+  color: var(--n2);
+}
+
+.text,
+.years {
+  color: var(--n4);
 }
 
 @media (max-width: 430px) {
