@@ -1,7 +1,7 @@
 ---
 title: "Integrating AI in Web Development: Opportunities and Challenges"
 date: "Oct 22, 2023"
-type: "Technology"
+type: "technology"
 image: "/images/articles/article-5.jpg"
 ---
 

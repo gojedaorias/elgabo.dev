@@ -6,7 +6,7 @@ import cn from "classnames";
 import { Article } from "@/components/Cards";
 
 export default function Posts({ posts }) {
-  const [activeTab, setActiveTab] = React.useState("All");
+  const [activeTab, setActiveTab] = React.useState("all");
   const navRefs = React.useRef([]);
 
   const addToRefs = (el) => {
@@ -15,7 +15,7 @@ export default function Posts({ posts }) {
     }
   };
 
-  const tabs = ["All", "Design", "Development", "Technology", "Branding"];
+  const tabs = ["all", "design", "development", "technology", "branding"];
 
   const handleClickTab = (tab) => {
     setActiveTab(tab);
@@ -34,7 +34,7 @@ export default function Posts({ posts }) {
   };
 
   const filteredPosts =
-    activeTab === "All"
+    activeTab === "all"
       ? posts
       : posts.filter((article) => article.type === activeTab);
 

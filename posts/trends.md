@@ -1,7 +1,7 @@
 ---
 title: "The Future of Web Apps: Trends to Watch in 2024"
 date: "Oct 25, 2023"
-type: "Design"
+type: "design"
 image: "/images/articles/article-3.jpg"
 ---
 

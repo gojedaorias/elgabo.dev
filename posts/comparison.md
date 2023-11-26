@@ -1,7 +1,7 @@
 ---
 title: "React Native vs. Expo: A Comprehensive Comparison"
 date: "Nov 20, 2023"
-type: "Development"
+type: "development"
 image: "/images/articles/article-2.jpg"
 ---
 

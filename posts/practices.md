@@ -1,7 +1,7 @@
 ---
 title: "Optimizing User Experience in Web Design: Best Practices"
 date: "Oct 25, 2023"
-type: "Branding"
+type: "branding"
 image: "/images/articles/article-4.jpg"
 ---
 

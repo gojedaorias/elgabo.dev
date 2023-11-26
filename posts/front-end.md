@@ -1,7 +1,7 @@
 ---
 title: "Next.js 13: Revolutionizing Front-End Development"
 date: "Dec 1, 2023"
-type: "Design"
+type: "design"
 image: "/images/articles/article-1.jpg"
 ---
 

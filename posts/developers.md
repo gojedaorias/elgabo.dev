@@ -1,7 +1,7 @@
 ---
 title: "Mobile App Development: Essential Tools for Developers in 2024"
 date: "Oct 14 2023"
-type: "Design"
+type: "design"
 image: "/images/articles/article-6.jpg"
 ---
 
