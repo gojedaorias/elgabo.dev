@@ -1,5 +1,5 @@
-import HomePage from "@/screens/Home";
+import ContactPage from "@/screens/Contact";
 
 export default function Contact() {
-  return <HomePage />;
+  return <ContactPage />;
 }

@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero_content {
   display: flex;
   flex-direction: column;
@@ -14,6 +19,10 @@
   width: 44px;
   height: 44px;
   stroke: var(--n4);
+}
+
+.form_container {
+  margin-top: 64px;
 }
 
 @media (max-width: 1024px) {
