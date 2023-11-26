@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./latest-posts.module.css";
 import cn from "classnames";
 import { Article } from "@/components/Cards";
-import { articles } from "@/mocks/articles";
 import Link from "next/link";
+import { getPosts } from "@/lib/posts";
 
 export default function LatestPosts() {
+  const postMetadata = getPosts();
+
   return (
     <section className={cn("section")}>
       <div className={styles.container}>
@@ -18,8 +20,8 @@ export default function LatestPosts() {
         </Link>
 
         <div className={styles.articles}>
-          {articles.slice(0, 3).map((article) => (
-            <Article key={article.id} {...article} />
+          {postMetadata.slice(0, 3).map((article) => (
+            <Article {...article} />
           ))}
         </div>
       </div>
