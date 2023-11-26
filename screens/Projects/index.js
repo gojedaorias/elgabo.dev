@@ -6,6 +6,7 @@ import Process from "./Process";
 import Testimonials from "./Testimonials";
 import Introduction from "@/components/Introduction";
 import Companies from "./Companies";
+import CTA from "@/components/CTA";
 
 export default function ProjectsPage() {
   return (
@@ -16,6 +17,7 @@ export default function ProjectsPage() {
       <Testimonials />
       <Introduction />
       <Companies />
+      <CTA />
     </Layout>
   );
 }
