@@ -47,6 +47,30 @@ const products = [
     image: "/images/products/product-4.png",
     url: "/products/welltrack",
   },
+  {
+    title: "Gastro",
+    description: "Culinary website template; interactive, stylish",
+    price: 99.99,
+    status: [
+      {
+        title: "New",
+      },
+    ],
+    image: "/images/products/product-5.png",
+    url: "/products/gastro",
+  },
+  {
+    title: "Showcase",
+    description: "Artist's portfolio app; elegant, feature-rich.",
+    price: 29.99,
+    status: [
+      {
+        title: "New",
+      },
+    ],
+    image: "/images/products/product-6.png",
+    url: "/products/showcase",
+  },
 ];
 
 export { products };

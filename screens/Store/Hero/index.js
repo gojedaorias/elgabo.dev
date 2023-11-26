@@ -4,37 +4,23 @@ import React from "react";
 import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
-import { Product } from "@/components/Cards";
+import { Product, Project } from "@/components/Cards";
+import { Store } from "@/components/Icons";
 import { products } from "@/mocks/products";
-import Link from "next/link";
 
 export default function Hero() {
   return (
     <main className={cn("section-hero")}>
       <section className={cn("container")}>
         <div className={styles.hero_content}>
-          <div className={styles.author}>
-            <div className={styles.avatar_container}>
-              <img
-                className={styles.avatar_image}
-                src="/logo.png"
-                alt="avatar"
-              />
-            </div>
-            <div>
-              <p className={cn("body-2-semibold", styles.caption)}>
-                Angel Uriostegui
-              </p>
-              <p className={cn("caption", styles.profession)}>Programming</p>
-            </div>
+          <div className={styles.icon_container}>
+            <Store />
           </div>
 
           <div
             style={{ position: "relative", width: "100%", overflow: "hidden" }}
           >
-            <h1 className={cn("hero", styles.title)}>
-              I design + code apps & websites.
-            </h1>
+            <h1 className={cn("hero", styles.title)}>Premium templates.</h1>
 
             <motion.div
               initial={{ width: "100%" }}
@@ -61,7 +47,7 @@ export default function Hero() {
           <div className={styles.bottom_content}>
             <div>
               <p className={cn("body-1")}>
-                Bringing beauty to the web, one line of code at a time.
+                Premium apps, templates and components.
               </p>
               <motion.button
                 whileHover={{
@@ -117,22 +103,14 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className={styles.products_container}>
-          <div className={styles.products}>
-            {products.slice(0, 4).map((product, index) => (
-              <Product
-                key={product.title}
-                product={product}
-                isNew={index === 0}
-              />
-            ))}
-          </div>
-
-          <Link href="/store">
-            <button className={cn("button-stroke", styles.secondary_button)}>
-              See all
-            </button>
-          </Link>
+        <div className={styles.products}>
+          {products.map((product, index) => (
+            <Product
+              key={product.title}
+              product={product}
+              isNew={index === 0}
+            />
+          ))}
         </div>
       </section>
     </main>

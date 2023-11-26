@@ -1,5 +1,5 @@
-import HomePage from "@/screens/Home";
+import StorePage from "@/screens/Store";
 
 export default function Store() {
-  return <HomePage />;
+  return <StorePage />;
 }
