@@ -3,6 +3,7 @@ import styles from "./latest-posts.module.css";
 import cn from "classnames";
 import { Article } from "@/components/Cards";
 import { articles } from "@/mocks/articles";
+import Link from "next/link";
 
 export default function LatestPosts() {
   return (
@@ -12,10 +13,12 @@ export default function LatestPosts() {
         <h1 className={cn("h2", styles.title)}>
           Take a look at the <br /> latest articles.
         </h1>
-        <button className={cn("button")}>Explore all posts</button>
+        <Link href="/writings">
+          <button className={cn("button")}>Explore all posts</button>
+        </Link>
 
         <div className={styles.articles}>
-          {articles.map((article) => (
+          {articles.slice(0, 3).map((article) => (
             <Article key={article.id} {...article} />
           ))}
         </div>

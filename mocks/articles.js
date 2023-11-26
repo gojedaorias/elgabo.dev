@@ -17,6 +17,24 @@ const articles = [
     type: "Design",
     image: "/images/articles/article-3.jpg",
   },
+  {
+    title: "Optimizing User Experience in Web Design: Best Practices",
+    date: "Oct 25, 2023",
+    type: "Branding",
+    image: "/images/articles/article-4.jpg",
+  },
+  {
+    title: "Integrating AI in Web Development: Opportunities and Challenges",
+    date: "Oct 22, 2023",
+    type: "Technology",
+    image: "/images/articles/article-5.jpg",
+  },
+  {
+    title: "Mobile App Development: Essential Tools for Developers in 2024",
+    date: "Oct 14 2023",
+    type: "Design",
+    image: "/images/articles/article-6.jpg",
+  },
 ];
 
 export { articles };
