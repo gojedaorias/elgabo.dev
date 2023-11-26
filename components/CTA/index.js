@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./cta.module.css";
 import cn from "classnames";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -17,7 +18,9 @@ export default function CTA() {
             out now to transform your vision into reality.
           </p>
 
-          <button className={cn("button")}>Get in touch</button>
+          <Link href="/contact">
+            <button className={cn("button")}>Get in touch</button>
+          </Link>
         </div>
       </div>
     </div>
