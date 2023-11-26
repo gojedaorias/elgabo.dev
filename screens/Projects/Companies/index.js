@@ -9,7 +9,12 @@ import { companies } from "@/mocks/companies";
 import { motion } from "framer-motion";
 
 export default function Companies() {
-  const continuousCompanies = [...companies, ...companies, ...companies];
+  const continuousCompanies = [
+    ...companies,
+    ...companies,
+    ...companies,
+    ...companies,
+  ];
 
   const singleSetWidth = 1024;
 
