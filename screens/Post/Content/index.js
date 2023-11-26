@@ -7,7 +7,7 @@ export default function Content({ contentHtml, frontmatter }) {
   return (
     <section className={cn("section")}>
       <div className={styles.container}>
-        <Link href="/">
+        <Link href="/writings">
           <button className={cn("button-stroke", styles.button)}>
             Go back
           </button>

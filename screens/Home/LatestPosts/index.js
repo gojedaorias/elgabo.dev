@@ -6,7 +6,7 @@ import Link from "next/link";
 import { getPosts } from "@/lib/posts";
 
 export default function LatestPosts() {
-  const postMetadata = getPosts();
+  const posts = getPosts();
 
   return (
     <section className={cn("section")}>
@@ -20,7 +20,7 @@ export default function LatestPosts() {
         </Link>
 
         <div className={styles.articles}>
-          {postMetadata.slice(0, 3).map((article) => (
+          {posts.slice(0, 3).map((article) => (
             <Article {...article} />
           ))}
         </div>

@@ -4,10 +4,8 @@ import React from "react";
 import styles from "./posts.module.css";
 import cn from "classnames";
 import { Article } from "@/components/Cards";
-import { articles } from "@/mocks/articles";
-import { usePathname } from "next/navigation";
 
-export default function Posts() {
+export default function Posts({ posts }) {
   const [activeTab, setActiveTab] = React.useState("all");
   const navRefs = React.useRef([]);
 
@@ -55,7 +53,7 @@ export default function Posts() {
         </div>
 
         <div className={styles.articles}>
-          {articles.map((article) => (
+          {posts.map((article) => (
             <Article key={article.id} {...article} />
           ))}
         </div>
