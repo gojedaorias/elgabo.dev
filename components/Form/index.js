@@ -5,9 +5,11 @@ import cn from "classnames";
 
 export default function Form() {
   const [state, handleSubmit] = useForm("mbjvvgbp");
+
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p className={cn("caption")}>Thanks for reaching out!</p>;
   }
+
   return (
     <form onSubmit={handleSubmit} className={styles.container}>
       <div className={styles.inputs}>
@@ -17,6 +19,7 @@ export default function Form() {
           name="email"
           placeholder="Your email"
           className={cn("caption", styles.input)}
+          required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
@@ -26,6 +29,7 @@ export default function Form() {
           name="name"
           placeholder="Your name"
           className={cn("caption", styles.input)}
+          required
         />
         <ValidationError prefix="Name" field="name" errors={state.errors} />
       </div>
@@ -36,6 +40,7 @@ export default function Form() {
           name="message"
           className={cn("caption", styles.textarea)}
           placeholder="Your message"
+          required
         />
         <ValidationError
           prefix="Message"
