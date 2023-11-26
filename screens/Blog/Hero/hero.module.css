@@ -23,7 +23,7 @@
 .icon_container svg {
   width: 24px;
   height: 24px;
-  fill: var(--n8);
+  fill: var(--green);
 }
 
 @media (max-width: 1024px) {

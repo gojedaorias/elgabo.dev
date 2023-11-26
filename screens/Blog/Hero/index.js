@@ -4,8 +4,6 @@ import React from "react";
 import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
-import { Profile, Writing } from "@/components/Icons";
-import CircularAnimation from "@/components/CircularAnimation";
 
 export default function Hero() {
   return (
