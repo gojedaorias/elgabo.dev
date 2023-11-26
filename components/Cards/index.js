@@ -7,6 +7,7 @@ import FaqItem from "./FaqItem";
 import Step from "./Step";
 import Testimonial from "./Testimonial";
 import Fact from "./Fact";
+import Feature from "./Feature";
 
 export {
   Product,
@@ -18,4 +19,5 @@ export {
   Step,
   Testimonial,
   Fact,
+  Feature,
 };

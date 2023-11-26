@@ -21,6 +21,10 @@ import ArrowRight from "./ArrowRight";
 import Dribbble from "./Dribbble";
 import Plus from "./Plus";
 import Branch from "./Branch";
+import Gear from "./Gear";
+import LightBulb from "./LightBulb";
+import Squares from "./Squares";
+import Graph from "./Graph";
 
 export {
   Home,
@@ -46,4 +50,8 @@ export {
   Dribbble,
   Plus,
   Branch,
+  Gear,
+  LightBulb,
+  Squares,
+  Graph,
 };
