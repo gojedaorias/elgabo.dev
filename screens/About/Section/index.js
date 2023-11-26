@@ -7,7 +7,31 @@ export default function Section() {
     <section className={cn("section", styles.section)}>
       <div className={styles.container}>
         <div className={styles.images}>
-          <img />
+          <div className={styles.inner_images}>
+            <div className={styles.image_container}>
+              <img
+                src="/images/about/1.jpg"
+                className={styles.image}
+                alt="Lapse-1"
+              />
+            </div>
+
+            <div className={styles.image_container}>
+              <img
+                src="/images/about/2.jpg"
+                className={styles.image}
+                alt="Lapse-1"
+              />
+            </div>
+          </div>
+
+          <div className={styles.image_container}>
+            <img
+              src="/images/about/3.jpg"
+              className={styles.image}
+              alt="Lapse-1"
+            />
+          </div>
         </div>
 
         <div className={styles.content}>

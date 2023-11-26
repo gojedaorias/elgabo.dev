@@ -14,12 +14,16 @@
   }
 
   .section-hero {
-    padding: 64px 32px;
+    padding: 64px;
   }
 }
 
 @media (max-width: 430px) {
   .section {
     padding: 48px 32px;
+  }
+
+  .section-hero {
+    padding: 64px 32px;
   }
 }
