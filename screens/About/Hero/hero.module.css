@@ -10,20 +10,10 @@
   background-color: var(--n6);
 }
 
-.icon_container {
+.icon_container svg {
   width: 44px;
   height: 44px;
-  background-color: var(--background);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon_container svg {
-  width: 24px;
-  height: 24px;
-  fill: var(--n8);
+  stroke: var(--n4);
 }
 
 .bottom_content {

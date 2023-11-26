@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
-import { WritingBold } from "@/components/Icons";
+import { Writing } from "@/components/Icons";
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
       <section className={cn("container")}>
         <div className={styles.hero_content}>
           <div className={styles.icon_container}>
-            <WritingBold />
+            <Writing />
           </div>
 
           <div
