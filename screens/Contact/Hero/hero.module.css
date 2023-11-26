@@ -29,8 +29,13 @@
   .icon_container svg {
     width: 38px;
     height: 38px;
+    stroke: var(--n4);
   }
 }
 
 @media (max-width: 430px) {
+  .icon_container svg {
+    width: 32px;
+    height: 32px;
+  }
 }
