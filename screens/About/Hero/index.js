@@ -4,10 +4,7 @@ import React from "react";
 import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
-import { Project } from "@/components/Cards";
-import Link from "next/link";
-import { Profile } from "@/components/Icons";
-import { projects } from "@/mocks/projects";
+import { ProfileBold } from "@/components/Icons";
 import CircularAnimation from "@/components/CircularAnimation";
 
 export default function Hero() {
@@ -16,7 +13,7 @@ export default function Hero() {
       <section className={cn("container")}>
         <div className={styles.hero_content}>
           <div className={styles.icon_container}>
-            <Profile />
+            <ProfileBold />
           </div>
 
           <div

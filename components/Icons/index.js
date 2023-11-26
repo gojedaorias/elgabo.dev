@@ -25,6 +25,8 @@ import Gear from "./Gear";
 import LightBulb from "./LightBulb";
 import Squares from "./Squares";
 import Graph from "./Graph";
+import WritingBold from "./WritingBold";
+import ProfileBold from "./ProfileBold";
 
 export {
   Home,
@@ -54,4 +56,6 @@ export {
   LightBulb,
   Squares,
   Graph,
+  WritingBold,
+  ProfileBold,
 };
