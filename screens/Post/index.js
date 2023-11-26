@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 
 export default function PostPage({ contentHtml, frontmatter }) {
   return (
-    <Layout>
+    <Layout title="Post">
       <Content contentHtml={contentHtml} frontmatter={frontmatter} />
     </Layout>
   );

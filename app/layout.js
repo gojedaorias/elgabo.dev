@@ -2,7 +2,6 @@ import Sidebar from "@/components/Sidebar";
 import "../styles/index.css";
 import cn from "classnames";
 import { Inter, DM_Sans, Poppins } from "next/font/google";
-import TabNavigator from "@/components/TabNavigator";
 import { socials } from "@/mocks/socials";
 import { links } from "@/mocks/links";
 
@@ -39,7 +38,6 @@ export default function RootLayout({ children }) {
           }}
         >
           <Sidebar links={links} socials={socials} />
-          <TabNavigator links={links} socials={socials} />
           {children}
         </main>
       </body>
