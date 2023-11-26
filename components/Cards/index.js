@@ -8,6 +8,7 @@ import Step from "./Step";
 import Testimonial from "./Testimonial";
 import Fact from "./Fact";
 import Feature from "./Feature";
+import BackgroundItem from "./BackgroundItem";
 
 export {
   Product,
@@ -20,4 +21,5 @@ export {
   Testimonial,
   Fact,
   Feature,
+  BackgroundItem,
 };

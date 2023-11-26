@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 64px;
+}
+
+.items {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 48px;
+  }
+
+  .items {
+    gap: 32px;
+  }
+}
