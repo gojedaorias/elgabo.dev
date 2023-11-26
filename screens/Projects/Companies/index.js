@@ -5,7 +5,6 @@ import styles from "./companies.module.css";
 import cn from "classnames";
 import { facts } from "@/mocks/facts";
 import { Fact } from "@/components/Cards";
-import { Basecamp } from "@/components/Logos";
 import { companies } from "@/mocks/companies";
 import { motion } from "framer-motion";
 
