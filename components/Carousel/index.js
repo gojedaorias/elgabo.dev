@@ -27,6 +27,18 @@ export default function Carousel({ images, interval = 2000 }) {
           className={cn({ [styles.active]: index === currentIndex })}
         />
       ))}
+
+      <div className={styles.dots}>
+        {images.map((_, index) => (
+          <span
+            key={index}
+            className={cn(styles.dot, {
+              [styles.active]: index === currentIndex,
+            })}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
