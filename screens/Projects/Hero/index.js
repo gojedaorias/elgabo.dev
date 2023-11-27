@@ -5,7 +5,6 @@ import styles from "./hero.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
 import { Project } from "@/components/Cards";
-import Link from "next/link";
 import { Bag } from "@/components/Icons";
 import { projects } from "@/mocks/projects";
 import CircularAnimation from "@/components/CircularAnimation";
@@ -70,20 +69,14 @@ export default function Hero() {
 
         <div className={styles.projects_container}>
           <div className={styles.projects}>
-            {projects.map((product, index) => (
+            {projects.map((project, index) => (
               <Project
-                key={product.title}
-                product={product}
+                key={project.title}
+                project={project}
                 isNew={index === 0}
               />
             ))}
           </div>
-
-          <Link href="/store">
-            <button className={cn("button-stroke", styles.secondary_button)}>
-              See all
-            </button>
-          </Link>
         </div>
       </section>
     </main>
