@@ -15,7 +15,7 @@
   flex: 1;
 }
 
-.image_container {
+/* .image_container {
   margin-top: 32px;
   width: 100%;
   height: 500px;
@@ -23,20 +23,15 @@
   overflow: hidden;
 }
 
+
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .button {
   margin-bottom: 32px;
-}
-
-@media (max-width: 1440px) {
-  .image_container {
-    height: 308px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -44,14 +39,7 @@
     flex-direction: column;
     gap: 32px;
   }
-
-  .image_container {
-    height: 450px;
-  }
 }
 
 @media (max-width: 430px) {
-  .image_container {
-    height: 288px;
-  }
 }

@@ -9,7 +9,7 @@ export default function Product({ product, isNew }) {
     <Link href={`/products/${product.title}`}>
       <div className={styles.card}>
         <div className={styles.image_container}>
-          <img className={styles.image} src={product.image} alt="product" />
+          <img className={styles.image} src={product.images[0]} alt="product" />
         </div>
 
         <div className={styles.overlay}>

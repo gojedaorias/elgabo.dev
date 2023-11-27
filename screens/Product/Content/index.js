@@ -3,6 +3,7 @@ import styles from "./content.module.css";
 import cn from "classnames";
 import { Overview } from "@/components/Cards";
 import Link from "next/link";
+import Carousel from "@/components/Carousel";
 
 export default function Content({ product }) {
   return (
@@ -20,13 +21,7 @@ export default function Content({ product }) {
             {product.description}
           </div>
 
-          <div className={styles.image_container}>
-            <img
-              src={product.image}
-              alt={product.title}
-              className={styles.image}
-            />
-          </div>
+          <Carousel images={product.images} />
         </div>
 
         <Overview className={styles.overview} product={product} />
