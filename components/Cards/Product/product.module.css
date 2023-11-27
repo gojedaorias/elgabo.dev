@@ -123,4 +123,9 @@
   .card:hover .content {
     transform: none;
   }
+
+  .description {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
