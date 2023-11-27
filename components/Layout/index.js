@@ -10,7 +10,9 @@ export default function Layout({ children, title }) {
     <main className={cn("main")}>
       {children}
 
-      {title !== "Post" && <TabNavigator links={links} socials={socials} />}
+      {title !== "post" && title !== "product" && (
+        <TabNavigator links={links} socials={socials} />
+      )}
       <Footer />
     </main>
   );

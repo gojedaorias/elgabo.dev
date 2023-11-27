@@ -4,7 +4,7 @@ import Content from "./Content";
 
 export default function ProductPage({ product }) {
   return (
-    <Layout>
+    <Layout title="product">
       <Content product={product} />
     </Layout>
   );
