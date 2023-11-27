@@ -33,7 +33,7 @@ export default function Hero() {
           <div
             style={{ position: "relative", width: "100%", overflow: "hidden" }}
           >
-            <h1 className={cn("hero", styles.title)}>
+            <h1 className={cn("hero", styles.title, styles.typing_effect)}>
               I design + code apps & websites.
             </h1>
 

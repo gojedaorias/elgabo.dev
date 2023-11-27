@@ -57,6 +57,15 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
+.cursor {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 @media (max-width: 1024px) {
   .products_container {

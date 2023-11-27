@@ -9,6 +9,7 @@ import Testimonial from "./Testimonial";
 import Fact from "./Fact";
 import Feature from "./Feature";
 import BackgroundItem from "./BackgroundItem";
+import Overview from "./Overview";
 
 export {
   Product,
@@ -22,4 +23,5 @@ export {
   Fact,
   Feature,
   BackgroundItem,
+  Overview,
 };
