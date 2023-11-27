@@ -18,8 +18,8 @@ export default function Overview({ product }) {
       <div className={styles.features}>
         <div className={cn("body-2-semibold", styles.text)}>Key features:</div>
 
-        {product.features.map((feature) => (
-          <div className={cn("caption", styles.feature)}>
+        {product.features.map((feature, index) => (
+          <div key={index} className={cn("caption", styles.feature)}>
             <Icon name="check-bold" size={18} /> {feature.title}
           </div>
         ))}
@@ -32,8 +32,8 @@ export default function Overview({ product }) {
           Template includes:
         </div>
 
-        {product.extras.map((extra) => (
-          <div className={cn("caption", styles.feature)}>
+        {product.extras.map((extra, index) => (
+          <div key={index} className={cn("caption", styles.feature)}>
             <Icon name="check-bold" size={18} /> {extra.title}
           </div>
         ))}
