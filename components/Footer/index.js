@@ -22,7 +22,7 @@ export default function Footer({ title }) {
   return (
     <footer
       className={cn(styles.section, {
-        [styles.section_margin]: title === "post" || title === "product",
+        [styles.section_margin]: title,
       })}
     >
       <div className={styles.container}>
