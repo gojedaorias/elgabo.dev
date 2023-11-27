@@ -8,7 +8,7 @@ import { Dribbble, Instagram, Plus, X } from "../Icons";
 import Subscribe from "../Subscribe";
 import { motion } from "framer-motion";
 
-export default function Footer() {
+export default function Footer({ title }) {
   const [visible, setVisible] = React.useState(null);
 
   const toggleIndex = (index) => {
@@ -20,7 +20,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className={styles.section}>
+    <footer
+      className={cn(styles.section, {
+        [styles.section_margin]: title === "post" || title === "product",
+      })}
+    >
       <div className={styles.container}>
         <div className={styles.content}>
           {footerLinks.map((section, index) => (

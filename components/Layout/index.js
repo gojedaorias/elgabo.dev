@@ -13,7 +13,7 @@ export default function Layout({ children, title }) {
       {title !== "post" && title !== "product" && (
         <TabNavigator links={links} socials={socials} />
       )}
-      <Footer />
+      <Footer title={title} />
     </main>
   );
 }
