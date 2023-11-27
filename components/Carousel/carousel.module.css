@@ -16,6 +16,7 @@
   left: 0;
   opacity: 0;
   border-radius: 24px;
+  object-fit: cover;
 }
 
 .container img.active {
