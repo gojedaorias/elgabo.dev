@@ -30,4 +30,14 @@
     flex-direction: column;
     gap: 32px;
   }
+
+  .image_container {
+    height: 500px;
+  }
+}
+
+@media (max-width: 430px) {
+  .image_container {
+    height: 288px;
+  }
 }
