@@ -28,3 +28,10 @@
   margin-top: 8px;
   color: var(--n4);
 }
+
+@media (max-width: 430px) {
+  .placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
