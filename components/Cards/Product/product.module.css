@@ -120,4 +120,7 @@
   .content {
     gap: 32px;
   }
+  .card:hover .content {
+    transform: none;
+  }
 }
