@@ -17,7 +17,7 @@ export default function Features({ project }) {
           <Item
             project={project}
             image={project.images[1]}
-            title="Benefits"
+            title="How it works"
             content={project.introductions}
           />
         </div>
