@@ -21,6 +21,15 @@ export default function Features({ project }) {
             content={project.introductions}
           />
         </div>
+
+        <div className={styles.title_container}>
+          <div className={cn("body-2", styles.title)}>
+            Join the EcoTrack community today! Download the app and start your
+            journey towards a more sustainable lifestyle. Together, we can make
+            a difference in the fight against climate change.
+          </div>
+          <button className={cn("button")}>Vist {project.title}</button>
+        </div>
       </div>
     </section>
   );
