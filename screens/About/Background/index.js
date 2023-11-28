@@ -6,7 +6,7 @@ import { jobs, schools } from "@/mocks/background";
 
 export default function Background() {
   return (
-    <section className={cn("section")}>
+    <section className={cn("section")} id="background">
       <div className={styles.container}>
         <div className={styles.experience_container}>
           {jobs.map((job, index) => (

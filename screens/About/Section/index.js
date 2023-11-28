@@ -49,7 +49,9 @@ export default function Section() {
               solutions.
             </div>
 
-            <button className={cn("button")}>Learn more</button>
+            <a className={cn("button")} href="#background">
+              Learn more
+            </a>
           </div>
         </div>
       </div>

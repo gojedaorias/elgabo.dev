@@ -51,7 +51,10 @@ export default function Hero() {
                 Crafting tailored web and app solutions that bring client ideas
                 to life.
               </p>
-              <motion.button
+              <motion.a
+                href="https://ui8.net/users/angel-uriostegui?status=6"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.2 },
@@ -60,7 +63,7 @@ export default function Hero() {
                 className={cn("button", styles.button)}
               >
                 Get template
-              </motion.button>
+              </motion.a>
             </div>
 
             <CircularAnimation />
