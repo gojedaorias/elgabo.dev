@@ -28,7 +28,15 @@ export default function Features({ project }) {
             journey towards a more sustainable lifestyle. Together, we can make
             a difference in the fight against climate change.
           </div>
-          <button className={cn("button")}>Vist {project.title}</button>
+
+          <a
+            href="https://krafty.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn("button")}
+          >
+            Vist {project.title}
+          </a>
         </div>
       </div>
     </section>
