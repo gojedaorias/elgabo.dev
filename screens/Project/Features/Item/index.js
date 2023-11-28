@@ -14,7 +14,7 @@ export default function Item({ project, image, title, content }) {
 
         <ul className={styles.items}>
           {content.map((item, index) => (
-            <li className={styles.item}>
+            <li key={index} className={styles.item}>
               <div className={cn("caption", styles.text)}>{item.title}</div>
             </li>
           ))}
