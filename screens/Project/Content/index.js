@@ -36,7 +36,7 @@ export default function Content({ project }) {
         <div className={styles.image_container}>
           <img
             className={styles.image}
-            src={project.image}
+            src={project.images[0]}
             alt={project.title}
           />
         </div>

@@ -9,7 +9,7 @@ export default function Project({ project, isNew }) {
     <Link href={`/project/${project.title}`}>
       <div className={styles.container}>
         <div className={styles.image_container}>
-          <img className={styles.image} src={project.image} alt="project" />
+          <img className={styles.image} src={project.images[0]} alt="project" />
         </div>
 
         <div className={styles.overlay}>
