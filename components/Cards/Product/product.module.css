@@ -85,7 +85,7 @@
 }
 
 .card:hover .icon svg {
-  stroke: var(--green); /* Change color on hover */
+  stroke: var(--blue); /* Change color on hover */
 }
 
 .title_container {
@@ -100,8 +100,8 @@
 }
 
 .status {
-  background: var(--green-950);
-  border: 2px solid var(--green-900);
+  background: var(--blue-950);
+  border: 2px solid var(--blue-900);
   padding: 6px 12px;
   border-radius: 8px;
 }
@@ -115,7 +115,7 @@
 }
 
 .price {
-  color: var(--green);
+  color: var(--blue);
 }
 
 @media (max-width: 430px) {

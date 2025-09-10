@@ -32,8 +32,8 @@
 .cost {
   position: absolute;
   z-index: 9999;
-  background: var(--green-950);
-  border: 2px solid var(--green-900);
+  background: var(--blue-950);
+  border: 2px solid var(--blue-900);
   padding: 6px 12px;
   border-radius: 8px;
   bottom: 24px;

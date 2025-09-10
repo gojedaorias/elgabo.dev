@@ -7,7 +7,7 @@
 .background {
   display: flex;
   align-items: center;
-  background: var(--green);
+  background: var(--blue);
   padding: 64px;
   gap: 64px;
   border-radius: 24px;

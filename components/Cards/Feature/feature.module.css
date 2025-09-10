@@ -4,7 +4,7 @@
 }
 
 .container:nth-child(odd) {
-  background-color: var(--green);
+  background-color: var(--blue);
   color: var(--n2);
   stroke: var(--n2);
 }
@@ -29,5 +29,3 @@
   color: var(--n4);
 }
 
-@media (max-width: 1024px) {
-}

@@ -84,7 +84,7 @@
 }
 
 .container:hover .icon svg {
-  stroke: var(--green); /* Change color on hover */
+  stroke: var(--blue); /* Change color on hover */
 }
 
 .title {
@@ -95,5 +95,3 @@
   color: var(--n6);
 }
 
-@media (max-width: 430px) {
-}

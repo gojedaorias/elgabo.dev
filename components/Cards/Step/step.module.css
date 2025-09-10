@@ -6,7 +6,7 @@
 }
 
 .withBackground {
-  background-color: var(--green);
+  background-color: var(--blue);
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@
 }
 
 .container:hover .icon svg {
-  stroke: var(--green); /* Change color on hover */
+  stroke: var(--blue); /* Change color on hover */
 }
 
 .title {

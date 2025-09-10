@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+.next/
+build/
+dist/
+out/
+
+# Configuration files
+*.config.js
+*.config.ts
+*.config.mjs
+eslint.config.mjs
+next.config.ts
+tsconfig.json
+
+# Utility scripts
+fix-*.js
+
+# Static assets
+public/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.ico
+*.webp
+*.mp4
+*.webm
+
+# Style files
+*.css
+*.scss
+*.sass
+*.less
+
+# Documentation
+README.md
+*.md
+
+# Environment files
+.env*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+__tests__/

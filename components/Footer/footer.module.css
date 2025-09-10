@@ -70,7 +70,7 @@
 }
 
 .socials svg:hover {
-  stroke: var(--green);
+  stroke: var(--blue);
 }
 
 @media (max-width: 1024px) {
@@ -115,11 +115,11 @@
   }
 
   .active .title {
-    color: var(--green);
+    color: var(--blue);
   }
 
   .active .title svg {
-    stroke: var(--green);
+    stroke: var(--blue);
   }
 
   .links {

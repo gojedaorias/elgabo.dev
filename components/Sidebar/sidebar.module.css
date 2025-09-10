@@ -31,11 +31,11 @@
 }
 
 .button:hover {
-  color: var(--green);
+  color: var(--blue-400);
 }
 
 .button:hover svg {
-  stroke: var(--green);
+  stroke: var(--blue-400);
   transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -45,12 +45,12 @@
 }
 
 .active {
-  color: var(--green);
-  /* border-left: 6px solid var(--green); */
+  color: var(--blue-400);
+   border-left: 6px solid var(--blue); 
 }
 
 .active svg {
-  stroke: var(--green);
+  stroke: var(--blue-400);
 }
 
 .sidebar_open .button {
@@ -75,12 +75,12 @@
 }
 
 .social svg {
-  stroke: var(--n6);
+  stroke: var(--n8);
   transition: 0.2s color ease-in-out;
 }
 
 .social:hover svg {
-  stroke: var(--green);
+  stroke: var(--blue-300);
 }
 
 .burger {
@@ -111,7 +111,7 @@
   left: 6px;
   width: 20px;
   height: 2px;
-  background: var(--green);
+  background: var(--blue-400);
   border-radius: 2px;
   transition: transform 0.2s;
 }
